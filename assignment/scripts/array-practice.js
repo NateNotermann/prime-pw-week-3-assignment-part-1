@@ -10,20 +10,24 @@ console.log('Animals are: ', animalArray);
 console.log( '');
 
 // 1.a. TODO: Make an array with some favorite foods
-console.log( 'number 1.a answer:' );
+console.log( '1.a - answer:(doesn;t show in console until 1.b)' );
 let favFoods = [ 'pizza', 'burger', 'puppy-chow', 'donut', 'chicken']
 
 
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
-console.log( '1.b answers:' );
+console.log( '1.b answer:' );
 console.log( favFoods );
 
 // 2. Array.length - tells you how many items are in the array
 console.log('--- 2. Length of an array ---');
+console.log( 'number of my favorite foods in my array is', favFoods.length ); // console.logs but doesn't convert length to a string.
+console.log( 'number of my favorite foods in my array is ' + (favFoods.length) ); 
+//tested different ways to concatenate a string and value into one string, while also adding a space.
+// console.log( 'number of my favorite foods in my array is ' + (favFoods.length) ); //doesn't add a space where i want
 
 // Example: How many animals are in the array? 
-console.log('Number of animals:', animalArray.length);
+console.log('example: Number of animals:', animalArray.length);
 
 // 2.a. TODO: Log to the console the number of foods in your array
 
