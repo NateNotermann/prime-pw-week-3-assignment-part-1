@@ -4,16 +4,20 @@ console.log('****** Array Practice *******');
 console.log('--- 1. Practice creating arrays ---');
 
 // Example: Array of animals
+console.log( 'example array:' );
 let animalArray = ['fish', 'cat', 'bird', 'dog'];
 console.log('Animals are: ', animalArray);
+console.log( '');
 
 // 1.a. TODO: Make an array with some favorite foods
+console.log( 'number 1.a answer:' );
+let favFoods = [ 'pizza', 'burger', 'puppy-chow', 'donut', 'chicken']
 
 
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
 
-
+console.log( favFoods );
 
 // 2. Array.length - tells you how many items are in the array
 console.log('--- 2. Length of an array ---');
