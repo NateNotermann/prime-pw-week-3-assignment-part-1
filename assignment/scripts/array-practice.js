@@ -16,7 +16,7 @@ let favFoods = [ 'pizza', 'burger', 'puppy-chow', 'donut', 'chicken']
 
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
-
+console.log( '1.b answers:' );
 console.log( favFoods );
 
 // 2. Array.length - tells you how many items are in the array
