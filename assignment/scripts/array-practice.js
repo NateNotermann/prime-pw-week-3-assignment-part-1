@@ -21,15 +21,15 @@ console.log( favFoods );
 
 // 2. Array.length - tells you how many items are in the array
 console.log('--- 2. Length of an array ---');
-console.log( 'number of my favorite foods in my array is', favFoods.length ); // console.logs but doesn't convert length to a string.
-console.log( 'number of my favorite foods in my array is ' + (favFoods.length) ); 
-//tested different ways to concatenate a string and value into one string, while also adding a space.
-// console.log( 'number of my favorite foods in my array is ' + (favFoods.length) ); //doesn't add a space where i want
-
 // Example: How many animals are in the array? 
 console.log('example: Number of animals:', animalArray.length);
 
 // 2.a. TODO: Log to the console the number of foods in your array
+console.log( 'number of my favorite foods in my array is', favFoods.length ); // console.logs but doesn't convert length to a string.
+    //but it does add a space inbetween, which is what i wanted
+console.log( 'number of my favorite foods in my array is ' + (favFoods.length) ); 
+console.log( 'number of my favorite foods in my array is ' + favFoods.length ); //doesn't add a space where i want
+//tested different ways to concatenate a string and value into one string, while also adding a space.
 
 
 // 3. Accessing array items
@@ -39,6 +39,8 @@ console.log('--- 3. Accessing items in an array ---');
 console.log('First animal is', animalArray[0])
 
 // 3.a. TODO: Log the second animal in the array 
+
+console.log( 'The SECOND animal in the array is', animalArray[1] );// not sure why this converted the index number to string, but in questions 2 line 28 it didn't
 
 
 // 3.b. TODO: Log the last animal in the array using it's array index 
