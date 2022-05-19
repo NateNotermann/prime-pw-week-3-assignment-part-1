@@ -41,13 +41,21 @@ console.log('First animal is', animalArray[0])
 // 3.a. TODO: Log the second animal in the array 
 
 console.log( 'The SECOND animal in the array is', animalArray[1] );// not sure why this converted the index number to string, but in questions 2 line 28 it didn't
-
+//should console.log "cat"
 
 // 3.b. TODO: Log the last animal in the array using it's array index 
-
+console.log( '3.a answer:' );
+console.log( animalArray[3]); //technically works, but not best way to do this at all.
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
+console.log( animalArray.slice(-1) ); //better way to go to the end. number of items in array(4) minus 1 --
+//so 4-1 = 3, console.logs the index #3 of teh array. which is the last in the array. confusing but works.
+console.log( 'The last animal in the array is', animalArray.slice(-1) ); //doesn't convert to string
+console.log( 'The last animal in the array is ' + animalArray.slice(-1) ); //DOES convert to string, but need to tyoe space in between
+//making note that "slice" does not change the array. some comnnands console.log but also CHANGE the arrays. Making note of the difference
+console.log( animalArray ); //just testing to make sure my comman didn;t change array
+
 
 
 
