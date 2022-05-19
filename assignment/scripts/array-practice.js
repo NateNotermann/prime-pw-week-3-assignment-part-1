@@ -135,13 +135,17 @@ console.log( 'The animals are now', animalArray );
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
 
-
-
+console.log( 'I removed the first food', favFoods.shift(), 'so the full list is now:' + favFoods, 'Sound good?' );
+//this converts everything to a string
+console.log( 'I removed the first food', favFoods.shift(), 'so the full list is now:' + favFoods, 'Sound good?' );
+//this console.logs the array VALUES, does NOT convert to strings.
 
 //------------stretch goals below----------------
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+
+
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
