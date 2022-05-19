@@ -67,7 +67,10 @@ animalArray.push('penguin');
 console.log('Added an animal to end,', animalArray);
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
-
+console.log( '4.a answer:' );
+console.log( favFoods.push( 'cotton-candy' ) ); //adds and then console.logs the index number of the new item ad the end
+console.log( 'My new lsit of favorite foods is now:', favFoods ); //keeps values and console.logs
+console.log( 'My new lsit of favorite foods is now:' + favFoods ); //converts to string and console.logs, doesn;t add spaces
 
 
 // Example: Remove the last animal by using Array.pop
