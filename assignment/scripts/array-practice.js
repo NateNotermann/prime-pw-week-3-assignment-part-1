@@ -71,7 +71,8 @@ console.log( '4.a answer:' );
 console.log( favFoods.push( 'cotton-candy' ) ); //adds and then console.logs the index number of the new item ad the end
 console.log( 'My new lsit of favorite foods is now:', favFoods ); //keeps values and console.logs
 console.log( 'My new lsit of favorite foods is now:' + favFoods ); //converts to string and console.logs, doesn;t add spaces
-
+// let addedFavFood = favFoods.push( 'PINK cotton-candy' );
+// console.log( 'added 1 more food to end to test ".pop" as a variable', addedFavFood ); //this didn't work, only logs index number
 
 // Example: Remove the last animal by using Array.pop
 let removedAnimal = animalArray.pop();
@@ -81,12 +82,25 @@ console.log('The animals are now', animalArray);
 // 4.b. TODO: Remove the food at the end of your array & 
 //      log both the food removed and the updated array
 
+//i see 2 ways to do this. 
+console.log( '4.b answer ---- #1: ---- ' );
+console.log( favFoods.pop() ); // this removes the last item, AND console.logs the ITEM
+console.log( favFoods ); //this just console.logs the ARRAY
+
+console.log( 'SETTING UP 4.b answer #2:' );
+console.log( '4.b redoing it. Adding back in', favFoods.push( 'cotton-candy2' ) ); //mostly just removes the ITEM
+console.log( favFoods ); //checking cotton-candy2 is in array
+
+console.log( '4.b answer -----  #2: -----' );
+console.log( 'I removed the last food in array called:', favFoods.pop() ); // REMOVED and CONSOLE.LOG the last item, "cotton-candy2"
+console.log( 'my list of fav foods is now:', favFoods ); //checking it was removed from the end
 
 // Example: Add an animal to the beginning using Array.unshift
-animalArray.unshift('walrus');
+animalArray.unshift('walrus'); 
 console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
+co
 
 
 // Example: Remove the first animal using Array.shift
