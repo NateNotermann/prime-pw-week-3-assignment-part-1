@@ -146,7 +146,6 @@ console.log( 'I removed the first food', favFoods.shift(), 'so the full list is 
 //      Then log the updated array.
 
 
-
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
 
