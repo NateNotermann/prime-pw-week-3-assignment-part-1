@@ -82,35 +82,63 @@ console.log('The animals are now', animalArray);
 // 4.b. TODO: Remove the food at the end of your array & 
 //      log both the food removed and the updated array
 
-//i see 2 ways to do this. 
+//i see FOUR ways to do this. ??
 console.log( '4.b answer ---- #1: ---- ' );
 console.log( favFoods.pop() ); // this removes the last item, AND console.logs the ITEM
 console.log( favFoods ); //this just console.logs the ARRAY
 
-console.log( 'SETTING UP 4.b answer #2:' );
+console.log( 'SETTING UP 4.b answer --- #2 --- :' );
 console.log( '4.b redoing it. Adding back in', favFoods.push( 'cotton-candy2' ) ); //mostly just removes the ITEM
 console.log( favFoods ); //checking cotton-candy2 is in array
 
-console.log( '4.b answer -----  #2: -----' );
+console.log( '4.b answer -----  #2: -----' ); //realized this is the same as 1 but with a text string
 console.log( 'I removed the last food in array called:', favFoods.pop() ); // REMOVED and CONSOLE.LOG the last item, "cotton-candy2"
 console.log( 'my list of fav foods is now:', favFoods ); //checking it was removed from the end
 
+console.log( 'SETTING UP 4.b answer ----- #3: ----' );
+console.log( '4.b redoing it. Adding back in', favFoods.push( 'cotton-candy3' ) ); //mostly just removes the ITEM
+console.log( favFoods ); //checking cotton-candy2 is in array //check it is
+
+console.log( '4.b answer -----  #3: -----' );
+let removedFood = favFoods.pop(); //just realized questions might be asking me to use a VARIABLE to do this? whoops
+console.log( removedFood );
+console.log( 'my new-new list of fav foods is:', favFoods ); // works using a let VARIABLE also
+
+
+console.log( 'SETTING UP 4.b answer ----- #4: ----' );
+console.log( '4.b redoing it. Adding back in', favFoods.push( 'cotton-candy4' ) ); //mostly just removes the ITEM
+console.log( favFoods ); //checking cotton-candy2 is in array //check it is
+
+console.log( '4.b answer -----  #4: -----' ); //REREAD QUESTION - I SEE IT NEED TO CONSOL.LOG THE ITEM AND ARRAY
+// console.log( favFoods[-1] ); //couldnt get this to work
+console.log( favFoods.slice(-1) ); //console.logs the last item before removing it
+favFoods.pop(); // removes last item, but does NOT console.log anything. 
+console.log( 'my 4th and final list of favFoods is:', favFoods ); //this just console.logs the ARRAY
+//----------------end of 4.b------------
+
+
 // Example: Add an animal to the beginning using Array.unshift
 animalArray.unshift('walrus'); 
-console.log(`Added an animal to beginning: ${animalArray}`);
-
+console.log(`Added an animal to beginning: ${animalArray}`); //i cant get this "${}" code to work within a string when testing
 // 4.c. TODO: Add a food at the beginning of the array & log the array
-co
+
+favFoods.unshift( 'Beer?' );
+console.log( 'new fav foods list;', favFoods );
+
 
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
 console.log('Removed the first animal', removedAnimal);
-console.log('The animals are now', animalArray);
+console.log( 'The animals are now', animalArray );
 
 // 4.d TODO: Remove the food at the beginning of your array & 
 //     log both the food removed and the updated array
 
+
+
+
+//------------stretch goals below----------------
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
